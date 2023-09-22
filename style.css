@@ -1,0 +1,402 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    
+} */
+
+:root{
+    --primary: #ffc636;
+    --secondary: #0a0b5b;
+}
+
+
+
+/* reset */
+li{
+    list-style-type: none;
+}
+
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* base styles */
+
+body{
+    background: var(--secondary);
+    width: 100%;
+    max-width: 100%;
+    /* overflow: hidden; */
+}
+
+.button{
+    background: none;
+    border: 2px solid var(--secondary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+
+.button:hover{
+    color: #222;
+    background: #fff;
+}
+
+
+input,textarea{
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #98+3d8;
+}
+
+
+/* fonts */
+h1,h2,h3,h4{
+    color: #dddbff;
+    font-weight: normal;
+}
+
+p,a,li{
+    color: #9893d8;
+}
+
+h1,h3{
+    font-size: 1.2em;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+h4{
+    font-size: 1.1em;
+}
+
+#welcome{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.leading{
+    /* font-size: 1.1em; */
+    font-style: italic;
+}
+
+
+
+
+/* mobile styles */
+.grid{
+    display: grid;
+    /* grid-template-columns: repeat(8, 1fr); */
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-nav{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.site-nav ul{
+    display: none;
+}
+.navbar{
+    /* display: flex; */
+    /* position: fixed; */
+    background-color: blue;
+}
+.navbar-nav{
+    justify-content: flex-end;
+    text-align: center;
+}
+
+,.site-nav h1{
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--primary);
+}
+
+#welcome{
+    padding: 0 20px 20px;
+}
+
+.welcome-text{
+    /* grid-column: 1/6; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.welcome-text h2{
+    color: #004FA2;
+    font-style: oblique;
+}
+
+.welcome-img{
+    grid-column: 6/9;
+}
+
+.welcome-img img{
+    width: 200%;
+}
+.welcome-text a{
+    margin: 20px 0;
+}
+
+
+#cake h3{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.projects a{
+    grid-column: 1/9;
+    margin: 20px 0;
+    display: flex;
+    
+}
+
+.projects a *{
+    margin: 0 20px;
+    max-width: 40%;
+    align-self: center;
+}
+
+.projects h4{
+    color: white;
+}
+
+#pastries{
+    padding: 30px 20px;
+    background: #07083e;
+}
+
+#pastries h3{
+    text-align: center;
+}
+
+#pastries ul{
+    margin: 40px 0;
+}
+
+#pastries li{
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    grid-column: span 5;
+    text-align: center;
+}
+
+#pastries img{
+    height: 120px;
+    margin: 10px auto;
+    grid-column: span 4;
+    
+}
+
+#pastries a{
+    font-size: 15px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#contact{
+    padding: 30px 20px;
+    background: #080936;
+}
+
+#contact h3, #contact p{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#contact form{
+    width: 80%;
+    max-width: 400%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#contact input, #contact textarea{
+    width: 100%;
+    margin: 10px 0;
+}
+
+#contact button{
+    margin: 10px;
+}
+
+footer{
+    padding: 30px 20px;
+    background-color: #14153d;
+    /* background-image: url(img/Cakes/image14.jpeg); */
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+footer .copyright{
+    grid-column: 1/3;
+    font-size: 0.8em;
+}
+
+footer .social{
+    grid-column: 7/9;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer li{
+    margin: 0 6px;
+}
+
+footer img{
+    width: 20px;
+}
+
+footer .collins{
+    display: flex;
+    justify-content: center;
+}
+
+
+footer .collins a{
+    color: gray;
+}
+
+/* styles for cakes html */
+.cakesproject img {
+    height: 150px;
+    width: 150px;
+    max-width: 100%;
+    margin: 20px 6px;
+    margin-top: 20px;
+}
+
+#cakesa a{
+    color: grey;
+    margin-bottom: 800px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: unset;
+    font-style: italic;
+}
+
+
+/* styles for ushering html */
+#usheringimg{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.usheringproject img{
+    height: 150px;
+    width: 150px;
+    max-width: 100%;
+    margin: 20px 6px;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+}
+
+#usheringa a{
+    color: grey;
+    margin-bottom: 800px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: unset;
+    font-style: italic;
+}
+
+
+
+
+
+
+/* tablet styles */
+@media screen and (min-width: 620px;){
+    .welcome-text{
+        grid-column: 1/5;
+    }
+
+    .welcome-img{
+        grid-column: 5/9;
+    }
+    .welcome-img img{
+        width: 100%;
+    }
+
+    .projects{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 750px;){
+    .welcome-text{
+        grid-column: 1/5;
+    }
+
+    .welcome-img{
+        grid-column: 5/9;
+    }
+    .welcome-img img{
+        width: 100%;
+    }
+
+    .projects{
+        margin-top: 40px;
+    }
+}
+
+
+
+@media screen and (min-width: 960px;){
+    body{
+        font-size: 18px;
+    }
+    .grid{
+        width: 100%;
+        max-width: 1060px;
+        margin: 0 auto;
+    }
+    .leading{
+        margin: 20px 0;
+    }
+    .site-nav{
+        padding: 0 20px;
+        grid-column: 1/3;
+    }
+    .site-nav ul{
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 1200px;){
+    body{
+        font-size: 20px;
+        max-width: 100%;
+    }   
+}
+
+
